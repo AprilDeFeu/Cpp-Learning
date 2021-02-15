@@ -109,7 +109,7 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(),'\n');
             cout << Error;
             cout << "Integer B: ";
-            cin >> IntegerA;
+            cin >> IntegerB;
         } else {
             break;
         }
