@@ -127,7 +127,7 @@ bool game(int X, int Y, int Z)
         }
     }
     cout << "The bomb exploded and everyone died.\n\tGAME OVER.\n";
-    return false; // Gamestate false, game over.
+    return false; // Gamestate false, game over.r
 }
 
 
