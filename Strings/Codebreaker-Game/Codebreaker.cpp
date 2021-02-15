@@ -17,9 +17,6 @@ void tutorial() {
 
     int CodeSum = CodeA+CodeB+CodeC;
     int CodeProduct = CodeA*CodeB*CodeC;
-
-    int Difficulty = 1;
-    int MaxDifficulty = 10;
     
     cout << "+ You will be given 3 numbers which are added and multiplied together.\n+ You must guess correctly before you get detected." << endl;
     cout << "+ For example, you have 3 numbers that added together give " << CodeSum << endl;
@@ -121,7 +118,7 @@ bool game(int X, int Y, int Z)
         if (GuessSum == Sum && GuessProduct == Product) 
         {
             cout << "Congratulations, LEVEL " << Y << " cleared.\n";
-            return true;
+            return true; // Gamestate true, continue
         }
         else 
         {
@@ -130,7 +127,7 @@ bool game(int X, int Y, int Z)
         }
     }
     cout << "The bomb exploded and everyone died.\n\tGAME OVER.\n";
-    return false;
+    return false; // Gamestate false, game over.
 }
 
 
